@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bioeconomia na Agricultura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">BioAgro<span>Sustentável</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#pilares">Pilares</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O Futuro da Agricultura é Biológico</h1>
+            <p>Transformando recursos renováveis e resíduos orgânicos em soluções de alto valor para o campo.</p>
+            <a href="#simulador" class="btn-primary">Simule o Impacto</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-padding">
+        <div class="container">
+            <h2>O que é Bioeconomia Aplicada à Agricultura?</h2>
+            <p class="section-lead">É a vertente que utiliza a ciência, a inovação e os recursos biológicos (como plantas, microrganismos e resíduos) para criar processos agrícolas mais eficientes, independentes de insumos fósseis e ecologicamente corretos.</p>
+            
+            <div class="grid-2">
+                <div class="about-text">
+                    <h3>Por que ela é vital hoje?</h3>
+                    <p>A agricultura tradicional depende fortemente de fertilizantes químicos e defensivos sintéticos, que geram altos custos e impactos ambientais. A bioeconomia redesenha essa lógica, fechando ciclos produtivo através da economia circular.</p>
+                </div>
+                <div class="about-benefits">
+                    <h3>Principais Benefícios:</h3>
+                    <ul>
+                        <li>🌱 Redução da pegada de carbono no campo.</li>
+                        <li>🔄 Regeneração e saúde a longo prazo do solo.</li>
+                        <li>💰 Nova fonte de receita com o reaproveitamento de resíduos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pilares" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="text-center">Pilares Práticos no Campo</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">🦠</div>
+                    <h3>Bioinsumos</h3>
+                    <p>Uso de bactérias, fungos e extratos vegetais para nutrir plantas e combater pragas de forma natural, reduzindo os defensivos químicos.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Bioenergia</h3>
+                    <p>Transformação de restos de colheita e dejetos animais em biogás, biometano e eletricidade para tornar as fazendas autossuficientes.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">♻️</div>
+                    <h3>Economia Circular</h3>
+                    <p>Criação de novos coprodutos de alto valor agregado a partir de subprodutos que antes seriam descartados ou queimados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="section-padding">
+        <div class="container">
+            <div class="simulator-box">
+                <h2>Simulador de Impacto Bioeconômico</h2>
+                <p>Insira o tamanho da sua propriedade para estimar os benefícios anuais ao migrar para práticas de bioeconomia.</p>
+                
+                <div class="form-group">
+                    <label for="hectares">Tamanho da propriedade (em Hectares):</label>
+                    <input type="number" id="hectares" placeholder="Ex: 150" min="1">
+                </div>
+                
+                <button id="btn-calcular" class="btn-secondary">Calcular Impacto</button>
+
+                <div id="resultados" class="hidden">
+                    <h3>Estimativa de Resultados Anuais:</h3>
+                    <div class="grid-3 text-center">
+                        <div class="res-item">
+                            <span class="res-number" id="res-quimicos">0</span>
+                            <p>Kg a menos de químicos no solo</p>
+                        </div>
+                        <div class="res-item">
+                            <span class="res-number" id="res-co2">0</span>
+                            <p>Toneladas de CO₂ evitadas</p>
+                        </div>
+                        <div class="res-item">
+                            <span class="res-number" id="res-economia">R$ 0</span>
+                            <p>Economia estimada em insumos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 BioAgro Sustentável. Desenvolvido para o futuro do campo.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
